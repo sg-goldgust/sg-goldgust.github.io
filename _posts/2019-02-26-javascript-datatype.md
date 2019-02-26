@@ -39,12 +39,12 @@ console.log("함수밖 globe = " + globe);
 
 
 
-##let keyword 객체 
+## let keyword 객체 
 ---
 다른 언어에서의 변수와 scope가 동일하다.
 (let, const는 explore에서 지원하지 않는다.)
 
-##특수한 값
+## 특수한 값
 ---
 - null : reference가 없음을 나타내는 값
 - undefined : 변수 선언시 초기화 되는 값
@@ -55,7 +55,7 @@ console.log("함수밖 globe = " + globe);
 	null, undefined, Nan, 0, "" -> False
 
 
-##Casting 
+## Casting 
 ---
 - 암묵적 casting : + 연산자는 *string* 우선되고, 나머지 연산자는 "num"가 우선시 된다. 
 

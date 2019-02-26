@@ -11,11 +11,11 @@ tag:
 comments: true
 ---
 
-## JavaScript Elements
+# JavaScript Elements
 
->다른 언어와 다르게 변수의 scope에 따라 선언의 키워드가 달라지게 된다. 블록 범위 변수 선언(let keyword) 과 함수 범위 변수 선언(var keyword)에 대해 살펴보자
+다른 언어와 다르게 변수의 scope에 따라 선언의 키워드가 달라지게 된다. 블록 범위 변수 선언(let keyword) 과 함수 범위 변수 선언(var keyword)에 대해 살펴보자
 
-###scope 객체 
+## scope 객체 
 ---
 {% highlight javascript %}
 var global = "전역";
@@ -39,27 +39,28 @@ console.log("함수밖 globe = " + globe);
 
 
 
-###let keyword 객체 
+##let keyword 객체 
 ---
 다른 언어에서의 변수와 scope가 동일하다.
 (let, const는 explore에서 지원하지 않는다.)
 
-###특수한 값
+##특수한 값
 ---
 - null : reference가 없음을 나타내는 값
 - undefined : 변수 선언시 초기화 되는 값
 - NaN : 숫자가 아님을 나타내는 값
 - infinite
->undefined의 경우 type으로도 사용된다.<br>
->null, undefined, Nan, 0, "" -> False
+
+	undefined의 경우 type으로도 사용된다.<br>
+	null, undefined, Nan, 0, "" -> False
 
 
-###Casting 
+##Casting 
 ---
 - 암묵적 casting : + 연산자는 *string* 우선되고, 나머지 연산자는 "num"가 우선시 된다. 
 
 - 명시적 casting : 
 	Number(),String(),parseInt(),parseFloat()<br/>
-	**Number(), String()** 은 class의 생성자이고 , javascript에서 new없이 사용시 함수로 사용되고 type의 변환을 가져온다.	
-> Javascript에서는 연산자 실행 전에 type casting이 먼저 일어난다. (비교연산자 주의!!)<br>
-> *'==='연사자를 통해 type부터 비교연산을 하게 된다.*
+	**Number(), String()** 은 class의 생성자이고 , javascript에서 new없이 사용시 함수로 사용되고 type의 변환을 가져온다.<br/><br>	
+ Javascript에서는 연산자 실행 전에 type casting이 먼저 일어난다. (비교연산자 주의!!)<br>
+ *'==='연사자를 통해 type부터 비교연산을 하게 된다.*

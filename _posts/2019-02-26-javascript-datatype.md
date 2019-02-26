@@ -17,23 +17,33 @@ comments: true
 
 ###scope 객체 
 ---
+{% highlight javascript %}
+var global = "전역";
+function func() {
+	globe = "글로벌" ; 
+	//전역변수, main() scope 객체에서 식별자로 인식된다.
 
-Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
+	var local = "로컬"; //지역변수
+	console.log("함수안 local = " + local);
+	console.log("함수안 global = " + global);
+}
+func();
+console.log("함수밖 local = " + local);
+//함수의 scope 객체가 사라지고 undefined가 출력된다.
+console.log("함수밖 global = " + global);
+console.log("함수밖 globe = " + globe);
+{% endhighlight %}
 
-![Smithsonian Image](https://mmistakes.github.io/minimal-mistakes/images/3953273590_704e3899d5_m.jpg)
-{: .image-right}
+- Javascript에서 함수나 전역변수 실행 전 현재 scope에서 운영되는 식별자를 찾는다. 현재 level에서 없는 변수는 자기의 상위 scope에서 찾게 된다.(scope chain)
+- "use strict" 선언으로 변수 선언 안할 시 err처리가 가능하다.
 
-*This is emphasized*. 
+
 
 ###let keyword 객체 
 ---
+다른 언어에서의 변수와 scope가 동일하다.
+(let, const는 explore에서 지원하지 않는다.)
 
-Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
-
-![Smithsonian Image](https://mmistakes.github.io/minimal-mistakes/images/3953273590_704e3899d5_m.jpg)
-{: .image-right}
-
-*This is emphasized*. 
 ###특수한 값
 ---
 - null : reference가 없음을 나타내는 값

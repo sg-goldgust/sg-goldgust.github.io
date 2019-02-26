@@ -92,7 +92,7 @@ fn(); // Hello javascript
 
 - Javascript에서 선언적 함수 호출은 함수 정의 앞에서도 가능하다.
 - 매개변수 갯수 check를 안한다.
-- <p style="color:green">**비선언적 함수는 식별자 검사 단계에서 함수로 인식이 안 되어 함수 호출이 먼저 나오는 것이 불가능하다.**</p>
+- <p style="color:green"> **비선언적 함수는 식별자 검사 단계에서 함수로 인식이 안 되어 함수 호출이 먼저 나오는 것이 불가능하다. **</p>
 
 ## 함수 고급
 ---
@@ -128,9 +128,10 @@ function test(name) {
 test('Javascript')();
 {% endhighlight %}
 
-- (일반적인 컴파일 언어에서는 지역변수의 수명은 함수가 끝날 때 사라진다.) JavaScript에서는 stack영역에서 함수 지역 변수들이 할당되는 것이 아니라, <p style="color:green">**scope객체에 대한 참조를 stack에서 관리한다.**</p>
+- (일반적인 컴파일 언어에서는 지역변수의 수명은 함수가 끝날 때 사라진다.) JavaScript에서는 stack영역에서 함수 지역 변수들이 할당되는 것이 아니라, <p style="color:green"> **scope객체에 대한 참조를 stack에서 관리한다.** </p>
 - 일반적으로 함수가 끝나면 scope도 참조가 끝나 사라지지만 이 경우 function이 리턴되고 리턴된 function에서 output을 가리켜 scope가 사라지지 않는다.
-- <p style="color:green">**이와 같이 함수를 통해서만 접근 가능한 변수를 closure라 한다.**</p>
+- scope chaining은 내부적으로 보는 것이 아니라 하위 level로 함수가 정의되었는지를 통해 결정된다. 
+- <p style="color:green"> **이와 같이 함수를 통해서만 접근 가능한 변수를 closure라 한다.** </p>
 
 ---
 다음과 같이 closure 변수를 운영체제에서 참조하고 있는 것도 가능하다.
@@ -164,3 +165,15 @@ console.log("5! = " + function(n){
 {% endhighlight %}
 
 - 익명함수에서 재귀 호출을 하기 위해서 arguments.callee 필드를 사용한다.
+
+## 내장함수
+---
+- 타입 변환 함수 
+- inFinite(), isNaN()
+- encodeURL(uri)
+- timer 함수 : 
+	- setTimeout(function,millisec)
+	- setInterval(function,millisec)
+	- clearTimeout(id)
+	- clearInterval(id)
+- eval() //보안상 사용하지 않는다.

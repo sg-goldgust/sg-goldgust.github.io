@@ -16,3 +16,11 @@ for(i=0; i<10 i++) {
 
 }
 ~~~
+
+{% highlight css %}
+#container {
+  float: left;
+  margin: 0 -240px 0 0;
+  width: 100%;
+}
+{% endhighlight %}

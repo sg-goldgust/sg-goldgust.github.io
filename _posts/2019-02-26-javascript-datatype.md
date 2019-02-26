@@ -63,4 +63,4 @@ console.log("함수밖 globe = " + globe);
 	Number(),String(),parseInt(),parseFloat()<br/>
 	**Number(), String()** 은 class의 생성자이고 , javascript에서 new없이 사용시 함수로 사용되고 type의 변환을 가져온다.<br/><br>	
  Javascript에서는 연산자 실행 전에 type casting이 먼저 일어난다. (비교연산자 주의!!)<br>
- *'==='연사자를 통해 type부터 비교연산을 하게 된다.*
+ *'==='연산자를 통해 type부터 비교연산을 하게 된다.*

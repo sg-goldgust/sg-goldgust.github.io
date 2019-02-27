@@ -13,7 +13,7 @@ comments: true
 
 # JavaScript Array
 
-JavaScript에서의 Array는 linked-list로 사용되고, script언어 특성상 type이 달라도 같은 arr에 위치하는 것이 가능하다. Java 마찬가지로 배열을 동적으로 메모리상에서 관리한다.  여러가지 예제를 통해 array의 특성을 알아보자.
+JavaScript에서의 Array는 linked-list로 사용되고, script언어 특성상 type이 달라도 같은 arr에 위치하는 것이 가능하다. Java 마찬가지로 배열을 동적으로 메모리상에서 관리한다. 배열은 key index인 object다. 여러가지 예제를 통해 array의 특성을 알아보자.
 
 ---
 {% highlight javascript %}

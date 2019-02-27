@@ -78,6 +78,7 @@ outer();
 
 - 내부함수를 만들면 naming충돌을 피할 수 있다. 안쪽 함수에서 바깥 함수의 접근은 가능(scope chain)하지만 바깥 함수에서 안쪽 함수의 접근은 불가능하다.
 - 내부함수는 scopechain이 형성된다. 따라서 내부함수는 바깥 scope의 접근이 가능하다.
+
 ## 비선언적 함수 
 ---
 {% highlight javascript %}

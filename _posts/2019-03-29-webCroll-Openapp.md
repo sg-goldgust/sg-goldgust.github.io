@@ -1,5 +1,3 @@
-
-
 ---
 layout: post
 title:  "웹 크롤링과 스크레이핑"
@@ -13,7 +11,6 @@ tag:
 - Open Api
 comments: true
 ---
-
 
 
 <h1>웹 크롤링과 스크레이핑 </h1>
